@@ -872,6 +872,15 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+.skriv-tolk-ul{
+  padding: 20px 40px 20px 60px;  
+}
+
+.faq .faq-list .skriv-tolk-ul li{
+  border-bottom: none;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 .faq .faq-list .question {
   display: block;
   position: relative;
