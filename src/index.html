@@ -30,6 +30,33 @@
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+  <script type="text/javascript">
+	var appInsights = window.appInsights || function(a){
+	  function b(a){c[a] = function(){var b = arguments; c.queue.push(function(){c[a].apply(c, b)})}} 
+	  var c = { config: a }, d = document, e = window;
+	  setTimeout(function(){
+		var b = d.createElement("script");
+		b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js";
+		d.getElementsByTagName("head")[0].appendChild(b)
+	  });
+	  try { c.cookie = d.cookie } catch(a) {}
+	  c.queue = [], c.version = 2.0;
+	  for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;) b("track" + f.pop());
+	  b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackPage"), b("stopTrackPage");
+	  b("flush");
+	  a.disableExceptionTracking || (f = "onerror", b("_" + f), e[f] = function(a, b, d, e, f){
+		var g = e || f || new Error(a);
+		c["_" + f] && c["_" + f](a, b, d, e, f), c.trackException({ exception: g })
+	  });
+	  return c
+	}({
+	  instrumentationKey: "ee828acc-b0c4-475b-ba4f-64fb6a630293"
+	});
+  
+	window.appInsights = appInsights;
+	appInsights.trackPageView();
+  </script>
+
 
 </head>
 
